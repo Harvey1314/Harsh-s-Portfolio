@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Patel</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top" class="dark_theme">
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="index.html">Harsh<span>.</span></a>
+        </h1>
+
+        <div class="navbar-actions">
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home.</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About.</a>
+            </li>
+
+            <li>
+              <a href="#qua" class="navbar-link">Education.</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills.</a>
+            </li>
+
+            <li>
+              <a href="Experience.html" class="navbar-link">Experience.</a>
+            </li>
+
+            <li>
+              <a href="Contact.html" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <section class="hero" id="home">
+          <figure class="hero-banner">
+            <picture>
+              <img
+                src="./assets/images/Main.png"
+                alt="A man in a blue shirt with a happy expression"
+                class="w-100"
+              />
+            </picture>
+          </figure>
+          <div class="hero-content">
+            <h2 class="h2 hero-title">Graduate Student @SLU</h2>
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+          <ul class="hero-social-list">
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-github"></ion-icon>
+                <div class="tooltip">Github</div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:haarsh1314@gmail.com" class="hero-social-link">
+                <ion-icon name="mail"></ion-icon>
+                <div class="tooltip">Mail</div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/harsh-p-a4a134138"
+                class="hero-social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/about-banner.png"
+              alt="A man in a alice blue shirt with a thinking expression"
+              class="w-100"
+              onclick="slideInContent()"
+            />
+          </figure>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">My Intro</p>
+            <h2 class="h3 section-title">About me</h2>
+            <p class="section-text">
+              Hello! I’m Harsh Patel, and I’m a developer who has a passion for
+              coding and designing. I have both the skill set and professional
+              background necessary to dive deep into the software world. As a
+              self-motivated team player, I envision an exciting future in the
+              industry.
+            </p>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary"
+                onclick="window.open('Harsh Patel.pdf', '_blank')"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div id="qua" class="quali">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My Qualification</p>
+            <h2 class="h3 section-title">Education</h2>
+            <div class="row-qua">
+              <div class="qua-div">
+                <div id="content">
+                  <ul class="timeline">
+                    <li class="event">
+                      <p class="qua-head-p">Master of Computer Science</p>
+                      <p class="qua-date-p">MAY 2025</p>
+                      <p class="qua-p">Saint Louis University - St Louis, MO</p>
+                    </li>
+                    <li class="event">
+                      <p class="qua-head-p">
+                        Bachelor of Information Technology (BTech) - 3.2 GPA
+                      </p>
+                      <p class="qua-date-p">JUN 2022</p>
+                      <p class="qua-p">Parul University - GUJARAT, INDIA</p>
+                    </li>
+                    <li class="event">
+                      <p class="qua-head-p">Diploma - 3.7 GPA</p>
+                      <p class="qua-date-p">MAY 2018</p>
+                      <p class="qua-p">
+                        Gujarat Technological University - GUJARAT, INDIA
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="skills" id="skills">
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML5</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/html5.png" alt="HTML5 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/css3.png" alt="CSS3 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/javascript.png"
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Bootstrap</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/bootstrap.png"
+                      alt="Bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="tools-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/command.png"
+                      alt="Command Line logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Trello</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/trello.png" alt="Trello logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Slack</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/slack.png" alt="Slack logo" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">Programming Skills</h2>
+
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface that
+              helps users get things done with less effort and time with those
+              technologies.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 <a href="#">Harsh</a>. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+      function slideInContent() {
+        var aboutContent = document.querySelector('.about-content');
+        aboutContent.style.right = '0';
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

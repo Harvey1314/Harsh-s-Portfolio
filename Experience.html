@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Patel</title>
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top" class="dark_theme">
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="index.html">Harsh<span>.</span></a>
+        </h1>
+
+        <div class="navbar-actions">
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home.</a>
+            </li>
+
+            <li>
+              <a href="index.html#about" class="navbar-link">About.</a>
+            </li>
+
+            <li>
+              <a href="index.html#qua" class="navbar-link">Education.</a>
+            </li>
+
+            <li>
+              <a href="index.html#skills" class="navbar-link">Skills.</a>
+            </li>
+
+            <li>
+              <a href="Experience.html" class="navbar-link">Experience.</a>
+            </li>
+
+            <li>
+              <a href="Contact.html" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <section class="project" id="portfolio">
+          <div class="project-content section-content">
+            <p class="section-subtitle">My Works</p>
+
+            <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+          </div>
+          <div class="main-exp">
+            <div class="experience" onclick="toggleDetails('company1')">
+              <img
+                src="https://i0.wp.com/www.infoservops.com/wp-content/uploads/2023/05/InfoServOps_Web_Logo.png?fit=960%2C290&ssl=1"
+                alt="Company 1 Logo"
+              />
+              <div class="inside-info">
+                <h2>NETWORK ADMINISTRATION</h2>
+                <p>Infoservops - Vadodara, Gujarat</p>
+                <button
+                  class="btn-more-info"
+                  onclick="showDummyDescription('company1')"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+            <div class="details" id="company1">
+              <ul class="qua-p" style="list-style-type:disc">
+                <li style="list-style-type:disc">
+                  Managed all media, press and public relations issues.
+                </li>
+                <li style="list-style-type:disc">
+                  Planned and organized corporate media and other special
+                  events.
+                </li>
+                <li style="list-style-type:disc">
+                  Cultivated positive relationships with community members
+                  through public relations campaigns.
+                </li>
+                <li style="list-style-type:disc">
+                  Established and maintained cooperative relationships with
+                  representatives of community, consumer, employee and public
+                  interest groups.
+                </li>
+                <li style="list-style-type:disc">
+                  Hybride Cloud Environment Using Cloud Computing Troubleshoot
+                  based on design and promo Specifications.
+                </li>
+                <li style="list-style-type:disc">
+                  Coached client representatives on effective communication with
+                  public and employees.
+                </li>
+                <li style="list-style-type:disc">
+                  Researched, negotiated, implemented and tracked advertising
+                  and public relations activities.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience" onclick="toggleDetails('company2')">
+              <img
+                src="https://i0.wp.com/www.infoservops.com/wp-content/uploads/2023/05/InfoServOps_Web_Logo.png?fit=960%2C290&ssl=1"
+                alt="Company 2 Logo"
+              />
+              <div class="inside-info">
+                <h2>WEB DEVELOPMENT INTERN</h2>
+                <p>Infoservops - Vadodara, Gujarat</p>
+                <button
+                  class="btn-more-info"
+                  onclick="showDummyDescription('company2')"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+            <div class="details" id="company2">
+              <ul class="qua-p" style="list-style-type:disc">
+                <li style="list-style-type:disc">
+                  Learn web development as an intern Learn the basics of HTML
+                  and CSS.
+                </li>
+                <li style="list-style-type:disc">Web Designing</li>
+                <li style="list-style-type:disc">
+                  Design banners, webpage speed,
+                </li>
+                <li style="list-style-type:disc">
+                  Design search engine optimization
+                </li>
+                <li style="list-style-type:disc">
+                  Built website content and designs using HTML and CSS.
+                </li>
+                <li style="list-style-type:disc">
+                  Supported staff activities to assist web page launches.
+                </li>
+                <li style="list-style-type:disc">
+                  Maintained strong education in latest technologies, software
+                  and hardware products for use in various projects.
+                </li>
+                <li style="list-style-type:disc">
+                  Redesigned sites to enhance navigation and improve visual
+                  appeal.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 <a href="#">Harsh</a>. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script2.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
