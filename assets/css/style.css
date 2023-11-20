@@ -197,6 +197,7 @@ body.active {
   text-transform: uppercase;
   padding-bottom: 5px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .section-subtitle::after {
@@ -212,6 +213,7 @@ body.active {
 .section-title {
   max-width: 350px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .section-text {
@@ -1040,6 +1042,7 @@ textarea.input-field {
     transform: rotate(0.75turn) translateX(-100%);
     transform-origin: left top;
     margin-bottom: 0;
+    text-align: left;
   }
 
   .section-subtitle::after {
@@ -1212,10 +1215,8 @@ textarea.input-field {
    */
 
   .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 30px;
+    display: flex;
+    flex-direction: row;
   }
 
   .about-banner {
@@ -1321,6 +1322,10 @@ textarea.input-field {
     right: -80px;
   }
 
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
   /**
    * ABOUT
    */
@@ -1504,13 +1509,13 @@ textarea.input-field {
 
 .about-banner {
   text-align: center;
-  transform: translateX(75%);
+  transform: translateX(65%);
   transition: transform 1s ease;
 }
 
 .about-content {
   left: 100%;
-  width: 100%;
+  width: 80%;
   height: 100%;
   transition: left 1s ease;
   box-sizing: border-box;
@@ -1525,4 +1530,22 @@ textarea.input-field {
 .about:hover .about-banner img {
   transform: translateX(-65%);
   transition: transform 1s ease; /* Adjust the percentage as needed */
+}
+
+@media (max-width: 990px) {
+  .about {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 5% 0;
+    border-radius: 30px;
+  }
+  .about:hover .about-banner img {
+    transform: translateX(0);
+    transition: transform 1s ease; /* Adjust the percentage as needed */
+  }
+  .about-banner {
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 1s ease;
+  }
 }
