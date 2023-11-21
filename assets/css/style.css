@@ -1571,6 +1571,6 @@ textarea.input-field {
     margin-top: 0;
   }
   .hero {
-    min-height: 0;
+    min-height: 0vh;
   }
 }

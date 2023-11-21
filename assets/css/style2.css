@@ -747,20 +747,21 @@ main .container {
 .experience {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: hsla(24, 74%, 58%, 0.1);
+  color: var(--color-primary);
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
-  width: 80%;
+  width: 100%;
 }
 
 .experience:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .inside-info {
@@ -780,11 +781,12 @@ main .container {
   display: none;
   margin: 10px 0 20px;
   padding: 3% 5%;
-  background-color: var(--bg-primary);
+  background-color: var(--color-primary);
   border-radius: 8px;
   box-shadow: 0 0 5px var(--color-secondary);
   width: 100%;
-  color: var(--color-primary);
+  color: var(--bg-secondary);
+  transition: all 1s ease;
 }
 
 .btn-more-info {
