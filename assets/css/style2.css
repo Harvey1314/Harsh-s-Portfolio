@@ -783,7 +783,7 @@ main .container {
   background-color: var(--bg-primary);
   border-radius: 8px;
   box-shadow: 0 0 5px var(--color-secondary);
-  width: 80%;
+  width: 100%;
   color: var(--color-primary);
 }
 
