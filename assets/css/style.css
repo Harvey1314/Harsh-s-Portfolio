@@ -1567,7 +1567,10 @@ textarea.input-field {
     transform: translateX(0);
     transition: transform 1s ease;
   }
-  ..hero-title {
+  .hero-title {
     margin-top: 0;
+  }
+  .hero {
+    min-height: 0;
   }
 }
