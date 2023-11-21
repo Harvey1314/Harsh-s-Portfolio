@@ -1567,4 +1567,7 @@ textarea.input-field {
     transform: translateX(0);
     transition: transform 1s ease;
   }
+  ..hero-title {
+    margin-top: 0;
+  }
 }
