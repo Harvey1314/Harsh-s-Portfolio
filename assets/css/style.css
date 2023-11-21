@@ -424,10 +424,6 @@ body.active {
   width: 100%;
 }
 
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
 main {
   overflow-x: hidden;
 }
@@ -466,10 +462,6 @@ main {
 .hero .btn-primary {
   margin-inline: auto;
 }
-
-/*-----------------------------------*\
- * #STATS
-\*-----------------------------------*/
 
 .stats {
   padding-block: var(--section-padding);
@@ -527,10 +519,6 @@ main {
   color: var(--color-secondary);
 }
 
-/*-----------------------------------*\
- * #ABOUT
-\*-----------------------------------*/
-
 .about-banner {
   max-width: 400px;
   margin-inline: auto;
@@ -545,10 +533,6 @@ main {
 .about .btn-secondary {
   margin-bottom: 10px;
 }
-
-/*-----------------------------------*\
- * #SKILLS
-\*-----------------------------------*/
 
 .skills {
   padding-block: var(--section-padding);
@@ -642,10 +626,6 @@ main {
   opacity: 1;
 }
 
-/*-----------------------------------*\
- * #PROJECT
-\*-----------------------------------*/
-
 .project {
   padding-block: var(--section-padding);
 }
@@ -717,10 +697,6 @@ main {
   text-decoration: underline;
   margin-inline: auto;
 }
-
-/*-----------------------------------*\
- * #CONTACT
-\*-----------------------------------*/
 
 .contact {
   padding-block: var(--section-padding);
@@ -855,10 +831,6 @@ textarea.input-field {
   color: var(--bg-primary);
 }
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background: var(--bg-secondary);
   padding-block: 20px;
@@ -879,10 +851,6 @@ textarea.input-field {
   display: inline-block;
   color: var(--raw-seinna);
 }
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
 
 .go-top {
   position: fixed;
@@ -909,19 +877,7 @@ textarea.input-field {
   transform: translateY(0);
 }
 
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 550px screen
- */
-
 @media (min-width: 550px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 550px;
     margin-inline: auto;
@@ -930,10 +886,6 @@ textarea.input-field {
   .section-title {
     max-width: 380px;
   }
-
-  /**
-   * PROJECT
-   */
 
   .project-list {
     column-count: 2;
@@ -945,15 +897,7 @@ textarea.input-field {
   }
 }
 
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 720px;
   }
@@ -962,17 +906,9 @@ textarea.input-field {
     max-width: 430px;
   }
 
-  /**
-   * STATS
-   */
-
   .stats-list {
     grid-template-columns: 1fr 1fr;
   }
-
-  /**
-   * ABOUT
-   */
 
   .btn-group {
     display: flex;
@@ -989,42 +925,18 @@ textarea.input-field {
     margin-bottom: 0;
   }
 
-  /**
-   * CONTACT
-   */
-
   .contact-form {
     max-width: 450px;
     margin-inline: auto;
   }
 }
 
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-    /**
-     * typography
-     */
-
     --fs-2: 3rem;
-
-    /**
-     * spacing
-     */
 
     --section-padding: 100px;
   }
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 980px;
@@ -1050,10 +962,6 @@ textarea.input-field {
     left: auto;
     right: calc(100% + 20px);
   }
-
-  /**
-   * HEADER
-   */
 
   .header {
     padding-block: 30px;
@@ -1098,10 +1006,6 @@ textarea.input-field {
   .navbar-link::before {
     height: 2px;
   }
-
-  /**
-   * HERO
-   */
 
   .hero {
     position: relative;
@@ -1198,10 +1102,6 @@ textarea.input-field {
     background: var(--color-secondary);
   }
 
-  /**
-   * STATS
-   */
-
   .stats-list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1209,10 +1109,6 @@ textarea.input-field {
   .stats-card {
     height: 100%;
   }
-
-  /**
-   * ABOUT
-   */
 
   .about {
     display: flex;
@@ -1222,10 +1118,6 @@ textarea.input-field {
   .about-banner {
     margin-bottom: 0;
   }
-
-  /**
-   * SKILLS
-   */
 
   .skills {
     display: grid;
@@ -1242,10 +1134,6 @@ textarea.input-field {
     margin-inline: 0;
   }
 
-  /**
-   * PROJECT
-   */
-
   .project-list {
     column-count: 3;
   }
@@ -1255,10 +1143,6 @@ textarea.input-field {
     margin: 25px;
     margin-left: 0;
   }
-
-  /**
-   * CONTACT
-   */
 
   .contact {
     display: grid;
@@ -1278,10 +1162,6 @@ textarea.input-field {
     margin-left: -40px;
   }
 
-  /**
-   * FOOTER
-   */
-
   .footer .container {
     display: flex;
     justify-content: center;
@@ -1293,15 +1173,7 @@ textarea.input-field {
   }
 }
 
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 1150px;
   }
@@ -1309,10 +1181,6 @@ textarea.input-field {
   .section-title {
     max-width: 460px;
   }
-
-  /**
-   * HERO
-   */
 
   .hero-social-list {
     left: -80px;
@@ -1326,9 +1194,6 @@ textarea.input-field {
     display: flex;
     flex-direction: row;
   }
-  /**
-   * ABOUT
-   */
 
   .about-banner {
     max-width: 450px;

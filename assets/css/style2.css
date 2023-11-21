@@ -425,10 +425,6 @@ body.active {
   width: 100%;
 }
 
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
 main {
   overflow-x: hidden;
 }
@@ -476,10 +472,6 @@ main .container {
   padding-block: var(--section-padding);
 }
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background: var(--bg-secondary);
   padding-block: 20px;
@@ -502,18 +494,10 @@ main .container {
 }
 
 @media (min-width: 550px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 550px;
     margin-inline: auto;
   }
-
-  /**
-   * PROJECT
-   */
 
   .project-list {
     column-count: 2;
@@ -525,30 +509,14 @@ main .container {
   }
 }
 
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 720px;
   }
 
-  /**
-   * STATS
-   */
-
   .stats-list {
     grid-template-columns: 1fr 1fr;
   }
-
-  /**
-   * ABOUT
-   */
 
   .btn-group {
     display: flex;
@@ -565,35 +533,15 @@ main .container {
     margin-bottom: 0;
   }
 
-  /**
-   * CONTACT
-   */
-
   .contact-form {
     max-width: 450px;
     margin-inline: auto;
   }
 }
 
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-    /**
-     * typography
-     */
-
     --fs-2: 3rem;
-
-    /**
-     * spacing
-     */
 
     --section-padding: 100px;
   }
@@ -604,13 +552,12 @@ main .container {
 
   .section-content {
     position: relative;
-    padding-left: 40px;
   }
 
   .section-subtitle {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -4%;
     transform: rotate(0.75turn) translateX(-100%);
     transform-origin: left top;
     margin-bottom: 0;
@@ -621,10 +568,6 @@ main .container {
     left: auto;
     right: calc(100% + 20px);
   }
-
-  /**
-   * HEADER
-   */
 
   .header {
     padding-block: 30px;
@@ -688,10 +631,6 @@ main .container {
     margin-left: -40px;
   }
 
-  /**
-   * FOOTER
-   */
-
   .footer .container {
     display: flex;
     justify-content: center;
@@ -703,22 +642,10 @@ main .container {
   }
 }
 
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
-  /**
-   * REUSED STYLE
-   */
-
   .container {
     max-width: 1150px;
   }
-
-  /**
-   * HERO
-   */
 
   .hero-social-list {
     left: -80px;
@@ -727,10 +654,6 @@ main .container {
   .scroll-down {
     right: -80px;
   }
-
-  /**
-   * ABOUT
-   */
 
   .about-banner {
     max-width: 450px;
@@ -769,6 +692,11 @@ main .container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+
+.inside-info p {
+  font-size: 1.2rem;
 }
 
 .experience img {
@@ -780,13 +708,13 @@ main .container {
 .details {
   display: none;
   margin: 10px 0 20px;
-  padding: 3% 5%;
+  padding: 5% 7%;
   background-color: var(--color-primary);
   border-radius: 8px;
   box-shadow: 0 0 5px var(--color-secondary);
   width: 100%;
   color: var(--bg-secondary);
-  transition: all 1s ease;
+  overflow: hidden;
 }
 
 .btn-more-info {
