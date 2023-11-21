@@ -1539,7 +1539,26 @@ textarea.input-field {
     padding: 5% 0;
     border-radius: 30px;
   }
+
+  .about-content {
+    position: absolute;
+    top: 100%;
+    width: 80%;
+    height: 100%;
+    transition: top 1s ease;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .about:hover .about-content {
+    top: 25%;
+    transition: top 1s ease;
+    display: inline;
+    margin: 0 auto;
+  }
+
   .about:hover .about-banner img {
+    opacity: 0.3;
     transform: translateX(0);
     transition: transform 1s ease; /* Adjust the percentage as needed */
   }
